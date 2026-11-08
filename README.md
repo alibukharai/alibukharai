@@ -54,28 +54,6 @@ React / Next.js · SQL / TimescaleDB · Docker · GitLab CI · GitHub Actions ·
 
 ---
 
-### Repos
-
-Product firmware (often private):
-
-| Repo | Focus |
-|------|--------|
-| [NXP-Audio-Speaker](https://github.com/alibukharai/NXP-Audio-Speaker) | USB audio host (RT1021) |
-| [esp-side](https://github.com/alibukharai/esp-side) | ESP32 product firmware |
-| [dash-board](https://github.com/alibukharai/dash-board) | BRIQX / fleet dashboard |
-| [flash-tool](https://github.com/alibukharai/flash-tool) | Factory provisioner |
-| [AtmosSphere](https://github.com/alibukharai/AtmosSphere) | Atmos / eARC player R&D |
-
-Public:
-
-| Repo | Focus |
-|------|--------|
-| [alibukharai.github.io](https://alibukharai.github.io) | Portfolio |
-| [Blogs](https://github.com/alibukharai/Blogs) | Notes & write-ups |
-| [back-to-basics](https://github.com/alibukharai/back-to-basics) | Practice |
-
----
-
 ### Education
 
 - **M.Eng.** Electronics — Fudan University, Shanghai (2019–2022)  
@@ -84,8 +62,7 @@ Public:
 ---
 
 <p align="center">
-  <img height="160" src="https://github-readme-stats.vercel.app/api?username=alibukharai&show_icons=true&theme=dark&hide_border=true&bg_color=0b0b0b&title_color=FFC107&icon_color=FFC107&text_color=b0b0b0" alt="GitHub stats" />
-  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=alibukharai&layout=compact&theme=dark&hide_border=true&bg_color=0b0b0b&title_color=FFC107&text_color=b0b0b0" alt="Top languages" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=alibukharai&layout=compact&theme=dark&hide_border=true&bg_color=0b0b0b&title_color=FFC107&text_color=b0b0b0" alt="Top languages" />
 </p>
 
 <p align="center">
