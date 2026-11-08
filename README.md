@@ -1,100 +1,94 @@
-### Hi, I'm Ali Hassan Shah 👋
+### Hi, I'm Ali Hassan Shah
 
-**Embedded Software Engineer** in Amsterdam, Netherlands.
+**Embedded software engineer** in the Netherlands — firmware, drivers, and the apps that run a device fleet.
 
-I build real-time firmware and connected products — multi-MCU systems, USB audio, OTA, and field diagnostics. Mostly **C / C++**, **FreeRTOS**, **ESP32**, and **NXP**.
+I work close to the metal: **USB Audio Class host**, dual-MCU bridges (**ESP32-S3 ↔ NXP RT1021**), Bluetooth / ESP-NOW control, **MQTT** + OTA, SoftAP provision, and **RS485 / Modbus** edge nodes. On the application side I ship React/SQL fleet dashboards so products stay observable in the field.
 
-Currently at **[Createq](https://www.createq.nl/)** · previously **AMD** and **Espressif Systems**
+**Now:** [createq](https://www.createq.nl/) (BRIQX retail audio + IoT) · also [Clear Water Now](https://clearwaternow.nl/) ultrasonic telemetry  
+**Before:** [AMD](https://www.amd.com/) (GPU RAS / kernel test) · [Espressif](https://www.espressif.com/) (Matter, FOC, edge AI)
 
----
-
-### Experience
-
-| Role | Company | Years |
-|------|---------|-------|
-| Embedded Software Engineer | Createq B.V. — Enkhuizen, NL | Dec 2025 – Present |
-| Software Engineer | AMD — Shanghai | Feb 2024 – Dec 2025 |
-| Embedded Software Engineer | Espressif Systems — Shanghai | Sep 2022 – Dec 2023 |
-
-**Recent work**
-- UAC1/UAC2 USB host on **NXP i.MX RT1020** for multi-speaker retail deployments (Coolblue / Outform)
-- Dual-MCU **ESP32 ↔ NXP** UART protocol (40+ commands) with framing, retries, and recovery
-- Coordinated **XMODEM OTA** + **MQTT** telemetry for remote fleet updates
-- Linux userspace GPU diagnostics & Jenkins/Pytest CI for AMD MI-series (RAS / SR-IOV)
-- ESP32 **Matter**, device drivers, and **ESP-FOC** motor control (~20 kHz loops)
+[Portfolio](https://alibukharai.github.io) · [LinkedIn](https://linkedin.com/in/alibukharai) · [Medium](https://medium.com/@engg.alibukharai) · [Email](mailto:engg.alibukharai@gmail.com)
 
 ---
 
-### Tech stack
+### What I build
 
-**Languages:** C · Embedded C++ · Python  
-
-**Platforms:** ESP32 / ESP-IDF · NXP i.MX RT1020 / MCUXpresso · FreeRTOS  
-
-**Protocols:** USB UAC1/UAC2 · UART · SPI · I2C · RS485 · Modbus RTU · MQTT · Bluetooth audio  
-
-**Tools:** GDB · Git · Jenkins · Pytest · gTest · Linux diagnostics  
-
----
-
-### Selected projects
-
-- **Multi-Speaker USB Audio Host** — UAC host on i.MX RT1020 with hub power control, hot-plug recovery, and SD/BT I2S mux for up to 4 concurrent speakers
-- **ESP32–NXP Dual-MCU Protocol & OTA** — framed UART control path + coordinated remote firmware updates with MQTT monitoring
-- **AMD AIDA Kernel-Log CLI** — Python userspace tool to collect dmesg/kernel logs and triage GPU RAS failures
-- **ESP-FOC** — Field-Oriented Control on ESP32 (Clarke/Park, SVPWM, multi-driver HAL)
-- **Matter Smart Knob** — ESP32 rotary controller with Thread/Wi-Fi commissioning and Arduino packaging
+| Layer | Examples |
+|-------|----------|
+| **Drivers / bare-metal** | USB host UAC / ACM on i.MX RT1021, hub VBUS, hot-plug recovery |
+| **Firmware** | ESP-IDF dual-MCU UART protocols, ESP-NOW demos, SoftAP, XMODEM/MCUBoot OTA |
+| **Field buses** | RS485 Modbus for industrial / aquaculture sensors |
+| **Cloud & ops** | MQTT fleets, React/SQL dashboards, factory flash (MAC → serial → NVS → QR) |
+| **Previously** | Linux GPU RAS tooling, Jenkins/Pytest CI, Matter stacks, ESP-FOC (~20 kHz) |
 
 ---
 
-### Repositories
+### Selected work
 
-Work / product (private — visible if you have access):
+**createq / BRIQX** — retail audio demos & fleet IoT  
+USB + Bluetooth headphone/speaker fixtures, Cove multiplay, Coolblue LED (208 series), factory provisioner, BRIQX Control.  
+→ [Portfolio · CreateQ](https://alibukharai.github.io)
 
-| Repo | What it is |
-|------|------------|
-| [NXP-Audio-Speaker](https://github.com/alibukharai/NXP-Audio-Speaker) | USB audio host firmware (i.MX RT1020) |
-| [esp-side](https://github.com/alibukharai/esp-side) | ESP32 / ESP-IDF product firmware |
-| [dash-board](https://github.com/alibukharai/dash-board) | Device fleet dashboard & telemetry |
-| [flash-tool](https://github.com/alibukharai/flash-tool) | Provisioning / flashing tooling |
-| [CreateqNXPTransmitter](https://github.com/alibukharai/CreateqNXPTransmitter) | NXP Wi-Fi audio transmitter |
-| [CreateqESPC5Receiver](https://github.com/alibukharai/CreateqESPC5Receiver) | ESP32 audio receiver |
+**Clear Water Now** — ultrasonic water treatment  
+ESP32 edge → RS485/Modbus → BRIQX-based CWN dashboard (aquaculture).  
+→ [clearwaternow.nl](https://clearwaternow.nl/) · [project](https://alibukharai.github.io/projects/cwn-ultrasonic.html)
 
-Public / learning:
+**AtmosSphere** *(in development)* — Atmos / eARC retail player  
+4K60 HDR + Dolby Atmos HDMI passthrough toward a locked Qt + BRIQX appliance.  
+→ [AtmosSphere](https://github.com/alibukharai/AtmosSphere)
 
-| Repo | What it is |
-|------|------------|
-| [Blogs](https://github.com/alibukharai/Blogs) | Technical notes & write-ups |
-| [alibukharai.github.io](https://alibukharai.github.io) | Portfolio site |
-| [back-to-basics](https://github.com/alibukharai/back-to-basics) | Embedded / systems practice |
-| [stm32-lcd](https://github.com/alibukharai/stm32-lcd) | STM32 LCD experiments |
+**AMD** — MI-series GPU RAS userspace, kernel IQE, AI-assisted log triage  
+
+**Espressif** — Matter devices, FOC motor control, ESP32 edge AI  
+
+---
+
+### Stack
+
+```text
+C / C++ · Python
+ESP-IDF · FreeRTOS · NXP MCUXpresso (i.MX RT1021)
+USB UAC/ACM · UART · SPI/I2C · RS485/Modbus · MQTT · Bluetooth / ESP-NOW
+React / Next.js · SQL / TimescaleDB · Docker · GitLab CI · GitHub Actions · Pytest
+```
+
+---
+
+### Repos
+
+Product firmware (often private):
+
+| Repo | Focus |
+|------|--------|
+| [NXP-Audio-Speaker](https://github.com/alibukharai/NXP-Audio-Speaker) | USB audio host (RT1021) |
+| [esp-side](https://github.com/alibukharai/esp-side) | ESP32 product firmware |
+| [dash-board](https://github.com/alibukharai/dash-board) | BRIQX / fleet dashboard |
+| [flash-tool](https://github.com/alibukharai/flash-tool) | Factory provisioner |
+| [AtmosSphere](https://github.com/alibukharai/AtmosSphere) | Atmos / eARC player R&D |
+
+Public:
+
+| Repo | Focus |
+|------|--------|
+| [alibukharai.github.io](https://alibukharai.github.io) | Portfolio |
+| [Blogs](https://github.com/alibukharai/Blogs) | Notes & write-ups |
+| [back-to-basics](https://github.com/alibukharai/back-to-basics) | Practice |
 
 ---
 
 ### Education
 
-- **M.Eng.** Electronics & Communication Engineering — Fudan University, Shanghai (2019 – 2022)
-- **B.S.** Electrical Engineering — COMSATS, Abbottabad (2013 – 2017)
+- **M.Eng.** Electronics — Fudan University, Shanghai (2019–2022)  
+- **B.S.** Electrical Engineering — COMSATS Abbottabad (2013–2017)
 
 ---
 
-### GitHub activity
-
 <p align="center">
-  <img height="165" src="https://raw.githubusercontent.com/alibukharai/alibukharai/main/assets/github-stats.svg" alt="GitHub stats" />
-  &nbsp;
-  <img height="165" src="https://raw.githubusercontent.com/alibukharai/alibukharai/main/assets/github-langs.svg" alt="Top languages" />
+  <img height="160" src="https://github-readme-stats.vercel.app/api?username=alibukharai&show_icons=true&theme=dark&hide_border=true&bg_color=0b0b0b&title_color=FFC107&icon_color=FFC107&text_color=b0b0b0" alt="GitHub stats" />
+  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=alibukharai&layout=compact&theme=dark&hide_border=true&bg_color=0b0b0b&title_color=FFC107&text_color=b0b0b0" alt="Top languages" />
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/alibukharai/alibukharai/main/assets/github-streak.svg" alt="GitHub streak" />
-</p>
-
----
-
-### Connect
-
-<p>
   <a href="https://linkedin.com/in/alibukharai"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
   <a href="https://alibukharai.github.io"><img src="https://img.shields.io/badge/Portfolio-222222?style=for-the-badge&logo=github&logoColor=white" alt="Portfolio" /></a>
   <a href="https://medium.com/@engg.alibukharai"><img src="https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white" alt="Medium" /></a>
